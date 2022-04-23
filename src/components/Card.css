@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+.card-component {
+  font-family: "Montserrat", sans-serif;
+  width: 260px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 400px;
+}
+.card-component img {
+  width: 100%;
+  cursor: pointer;
+  box-shadow:
+  1.9px 1.7px 2.2px rgba(0, 0, 0, 0.063),
+  4.6px 4px 5.3px rgba(0, 0, 0, 0.098),
+  8.6px 7.5px 10px rgba(0, 0, 0, 0.133),
+  15.4px 13.4px 17.9px rgba(0, 0, 0, 0.168),
+  28.8px 25.1px 33.4px rgba(0, 0, 0, 0.204),
+  69px 60px 80px rgba(0, 0, 0, 0.24)
+;
+
+}
+.card-component p {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.card-component-title{
+  font-weight: 600;
+}
+
+/* /// */
+.img__description {
+  text-align: center;
+  position: absolute;
+  background: black;
+  color: rgb(191, 189, 189);
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  border-radius: 8px;
+}
+
+.card-component:hover .img__description {
+  visibility: visible;
+  opacity: 0.9;
+  width: 250px;
+  height: 150px;
+  overflow-y: scroll;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
+}
+
+.img__description p {
+  font-weight: 600;
+  scrollbar-width: thin;
+  scrollbar-color: #3e3e78 #e0e0e0;
+  scrollbar-width: thin;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

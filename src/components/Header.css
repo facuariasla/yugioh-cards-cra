@@ -1,0 +1,55 @@
+header{
+  height: 12vh;
+  width: 100%;
+  background-image: url(../../public/background-purple.png);
+  background-size: 100% auto;
+  border-bottom: 10px solid #000;
+  border-top: 5px solid #000;
+  display: grid;
+  align-items: center;
+  transition: width 3s;
+  grid-template-columns: 1fr 1fr;
+}
+
+header .header-logo{
+  height: 50px;
+  width: 30px;
+  border: 4px solid white;
+  margin-left: 20px;
+  border-radius: 84% 16% 88% 12% / 50% 47% 53% 50% ;
+  color: white;
+  text-align: center;
+  background-image: url(../../public/background-yellow.png);
+  background-size: 100% auto;
+}
+header .header-logo:hover, header .header-logo:active{
+  height: 53px;
+  width: 33px;
+}
+
+header .header-navbar{
+  justify-self:end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-right: 20px;
+}
+
+.header-navbar nav{
+  background-color: antiquewhite;
+  height: 30px;
+  border-radius: 20px ;
+  background-image: url(../../public/background-yellow.png);
+  border: 1px solid white;
+  background-size: 100% auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  padding: 3px;
+  cursor: pointer
+}
+
+.header-navbar nav:hover,.header-navbar nav:active {
+  opacity: 55%;
+}

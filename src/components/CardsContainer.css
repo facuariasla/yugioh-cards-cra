@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+.container-box{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F2C271;
+  background-image: url(../../public/background-purple2.png);
+  background-size: 100% auto;
+
+  min-height: 100%;
+}
+.container-title{
+text-align: center;
+padding: 1rem;
+}
+.container-title h2{
+  text-align: center;
+  margin: 0;
+}
+.btn-container{
+  display: grid;
+  justify-items: center;
+}
+.btn-container button{
+  height: 80px;
+  width: 250px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 100px;
+  background-color: #CC92C4;
+  border: none;
+  margin-bottom: 2rem;
+}
+.btn-container button:active{
+  background-color: #6CDFC5;
+  color: #1e1e1e;
+  font-weight: 700;
+}
+.btn-container button:hover{
+  background-color: #6CDFC5;
+  color: #1e1e1e;
+  font-weight: 700;
+}
+
+
+
+.deck-container{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  min-height: 400px;
+}
