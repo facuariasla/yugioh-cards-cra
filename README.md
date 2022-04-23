@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 ## Based in 
 Yu-Gi-Oh! API by YGOPROdeck https://db.ygoprodeck.com/api-guide/
 

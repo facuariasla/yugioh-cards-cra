@@ -1,0 +1,24 @@
+.header-logo-info{
+  height: 250px;
+  width: 100px;
+  border: 10px solid white;
+  border-radius: 84% 16% 88% 12% / 50% 47% 53% 50% ;
+  color: white;
+  background-image: url(../../public/background-yellow.png);
+  background-size: 100%;
+}
+
+.info-article{
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.info-article a{
+  text-decoration: none;
+  color: rgb(240, 245, 173);
+}
+.info-article a:hover,.info-article a:active {
+  color: yellow;
+}
