@@ -46,7 +46,7 @@ export const CardsContainer = () => {
           <button className="get-random-card-btn" onClick={() => getCard()}>
             Get a random card
           </button>
-          {fullDeck && <Message msgContent={'Full deck (40)'}/>}
+          {<Message msgContent={`Cards: ${deck.length}/40`}/>}
         </div>
         <div className="deck-container">
           {loading && <Loader />}

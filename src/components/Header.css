@@ -50,6 +50,6 @@ header .header-navbar{
   cursor: pointer
 }
 
-.header-navbar nav:hover,.header-navbar nav:active {
+.header-navbar nav:hover,.header-navbar nav:active, .active {
   opacity: 55%;
 }

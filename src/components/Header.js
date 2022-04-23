@@ -1,15 +1,25 @@
 import React from 'react'
 import './Header.css'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
   return (
     <header className='header-comp'>
-      <nav className='header-logo'></nav>
+
+      <NavLink to='/'>
+        <nav className='header-logo'></nav>
+      </NavLink>
 
       <div className='header-navbar'>
-        <nav>Login</nav>
-        <nav>Register</nav>
-        <nav>Info</nav>
+        <NavLink to='/login' className={({ isActive })=> isActive? 'active': '' }>
+          <nav>Login</nav>
+        </NavLink>
+        <NavLink to='/signin'>
+          <nav>SignIn</nav>
+        </NavLink>
+        <NavLink to='/info'>
+          <nav>Info</nav>
+        </NavLink>
       </div>
 
     </header>
