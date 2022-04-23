@@ -1,0 +1,9 @@
+.sign-in-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  height: 40vh;
+  width: 350px;
+  margin-bottom: 0.5rem;
+}

@@ -5,7 +5,9 @@ export const Info = () => {
   return (
     <div>
       <Header/>
-      <h1>Info</h1>
+      <div className='info-container' style={{textAlign: 'center'}}>
+        <h1>Info</h1>
+      </div>
     </div>
   )
 }

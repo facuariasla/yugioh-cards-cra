@@ -34,7 +34,11 @@ header .header-navbar{
   gap: 1.5rem;
   margin-right: 20px;
 }
-
+@media screen and (max-width: 500px) {
+  header .header-navbar{
+    gap: 3vw;
+  }
+}
 .header-navbar nav{
   background-color: antiquewhite;
   height: 30px;
@@ -46,7 +50,7 @@ header .header-navbar{
   font-weight: 600;
   font-size: 18px;
   color: white;
-  padding: 3px;
+  padding: 0 5px 0 5px;
   cursor: pointer
 }
 

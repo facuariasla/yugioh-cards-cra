@@ -5,11 +5,12 @@ import "./CardsContainer.css";
 import { Loader } from "./Loader";
 import { Message } from "./Message";
 
+// Need to persist in localStorage
+
 export const CardsContainer = () => {
   const [card, setCard] = useState();
   const [deck, setDeck] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [fullDeck, setFullDeck] = useState(false)  
 
   useEffect(() => {
     console.log("Se agrego una carta");
@@ -20,8 +21,7 @@ export const CardsContainer = () => {
   }, [card, deck]);
 
   const getCard = () => {
-    if(deck.length === 40) {
-      setFullDeck(true)
+    if(deck.length === 30) {
       return;
     }
     setLoading(true);
@@ -40,13 +40,13 @@ export const CardsContainer = () => {
     <div className="cards-container-comp">
       <div className="container-box">
         <div className="container-title">
-          <h2>DECK:</h2>
+          <h1>DECK:</h1>
         </div>
         <div className="btn-container">
           <button className="get-random-card-btn" onClick={() => getCard()}>
             Get a random card
           </button>
-          {<Message msgContent={`Cards: ${deck.length}/40`}/>}
+          {<Message msgContent={`Cards: ${deck.length}/30`}/>}
         </div>
         <div className="deck-container">
           {loading && <Loader />}
