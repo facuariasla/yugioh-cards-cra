@@ -14,8 +14,6 @@ export const CardsContainer = () => {
 
   useEffect(() => {
     console.log("Se agrego una carta");
-    console.log(card);
-    console.log(deck);
     setLoading(false);
 
   }, [card, deck]);
@@ -31,7 +29,6 @@ export const CardsContainer = () => {
       .then((data) => {
         setCard(data);
         setDeck([data, ...deck]);
-        console.log(deck.length)
       })
       .catch((error) => console.log(error));
   };

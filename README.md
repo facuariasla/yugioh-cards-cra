@@ -1,3 +1,6 @@
+##
+WepApp https://cardsyugioh01.netlify.app
+in development...
 ## Based in 
 Yu-Gi-Oh! API by YGOPROdeck https://db.ygoprodeck.com/api-guide/
 
