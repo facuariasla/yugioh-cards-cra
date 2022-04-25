@@ -3,6 +3,7 @@ import './App.css';
 import { Homepage } from './pages/Homepage';
 import { Info } from './pages/Info';
 import { Login } from './pages/Login';
+import { NotFound } from './pages/NotFound';
 import { SignIn } from './pages/SignIn';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/signin' element={<SignIn/>}/>
           <Route path='/info' element={<Info/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </div>
