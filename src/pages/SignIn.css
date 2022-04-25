@@ -6,4 +6,12 @@
   height: 40vh;
   width: 350px;
   margin-bottom: 0.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  form input, form button{
+    width: 200px;
+  }
 }
